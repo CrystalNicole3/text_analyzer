@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+
+    <!-- Connect our CSS stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Text Analyzer</h1>
+
+        <p class="description">
+            Enter your text below to analyze its statistics.
+        </p>
+
+        <!-- Text submission form -->
+        <form method="POST">
+
+            <textarea
+                name="text"
+                placeholder="Type or paste your text here..."
+                required
+            ></textarea>
+
+            <button type="submit">Analyze Text</button>
+
+        </form>
+
+        <!-- Display analysis results -->
+        {% if results %}
+
+        <div class="results">
+
+            <h2>Analysis Results</h2>
+
+            <div class="result-item">
+                <span>Word Count</span>
+                <strong>{{ results.word_count }}</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Character Count</span>
+                <strong>{{ results.character_count }}</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Sentence Count</span>
+                <strong>{{ results.sentence_count }}</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Average Word Length</span>
+                <strong>{{ results.average_word_length }}</strong>
+            </div>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+</html>

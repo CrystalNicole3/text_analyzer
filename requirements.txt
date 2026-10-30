@@ -1,0 +1,4 @@
+
+Flask       # builds web application
+pytest      # runs automated tests
+gunicorn    # helps run the app when deployed

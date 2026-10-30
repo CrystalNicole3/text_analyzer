@@ -1,0 +1,83 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f8;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Main content container */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #243b53;
+}
+
+.description {
+    text-align: center;
+    color: #627d98;
+}
+
+/* Text entry area */
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid #bcccdc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #2874a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5f8a;
+}
+
+/* Results section */
+.results {
+    margin-top: 30px;
+}
+
+.results h2 {
+    color: #243b53;
+    border-bottom: 1px solid #d9e2ec;
+    padding-bottom: 10px;
+}
+
+/* Individual result rows */
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 5px;
+    border-bottom: 1px solid #edf0f2;
+    color: #334e68;
+}
+
+.result-item strong {
+    color: #2874a6;
+}
